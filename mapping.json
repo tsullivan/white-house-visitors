@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "number_of_replicas": 0,
+    "number_of_shards": 2
+  },
+  "mappings": {
+    "doc": {
+      "properties": {
+        "type": {
+          "type": "keyword"
+        },
+        "agency": {
+          "type": "keyword"
+        },
+        "date": {
+          "type": "date"
+        },
+        "attendees": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "attendees_affiliation": {
+          "type": "text",
+          "analyzer": "english",
+          "fielddata": true
+        },
+        "subject": {
+          "type": "text",
+          "analyzer": "english",
+          "fielddata": true
+        }
+      }
+    }
+  }
+}
+

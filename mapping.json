@@ -1,4 +1,5 @@
 {
+  "template": "wh_visitors",
   "mappings": {
     "doc": {
       "properties": {
@@ -8,7 +9,7 @@
         "agency": {
           "type": "keyword"
         },
-        "date": {
+        "@date": {
           "type": "date"
         },
         "attendees": {
